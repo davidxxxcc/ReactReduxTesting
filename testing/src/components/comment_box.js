@@ -34,4 +34,5 @@ class CommentBox extends Component {
     }
 }
 
+// connect let actions share with CommentBox's props
 export default connect(null,actions)(CommentBox);

@@ -8,6 +8,7 @@ const CommentList = (props) => {
     );
 };
 
+// It's not local state
 function mapStateToProps(state) {
     return {  comments: state.comments };
 }
