@@ -7,4 +7,4 @@ export default function(state = [], action) {
             // return [action.payload.data, ...state];  //some way to with ES6 [city, city, city] not [ city, [city, city] ]
     }
     return state;
-}
+} 
