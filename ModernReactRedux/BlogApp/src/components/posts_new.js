@@ -19,9 +19,11 @@ class PostsNew extends Component {
 
     render() {
         const { fields: {title, categories, content }, handleSubmit } = this.props;
-        
+        // const title = this.props.fields.title;
+        //  const handleSubmit = this.props.handleSubmit;
+        //  const { handleSubmit } = this.props.handleSubmit;
         return (
-            <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
+            <form onSubmit={ handleSubmit(this.onSubmit.bind(this)) }>
                 <h3>Create Form</h3>
                 <div className={`form-gourp ${title.touched && title.invalid ? 'has-danger' : ''}`}>
                     <label>Title</label>
