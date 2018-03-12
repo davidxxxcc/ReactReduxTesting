@@ -1,6 +1,6 @@
 export default function({ dispatch }){
     return next => action => {
-        // If action does not have payload
+        // If action does not have promise
         // or, the payload does not have a .then property
         // we don't car about it, send it on
         if(!action.payload || !action.payload.then) {

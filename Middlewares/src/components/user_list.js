@@ -1,6 +1,8 @@
 import React , { Component } from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
+// import { fetchUsers } from '../actions';
+
 
 class UserList extends Component {
     componentWillMount() {
@@ -31,4 +33,9 @@ class UserList extends Component {
      return { users: state.users};
  }
 
- export default connect(mapStateToProps, actions)(UserList);
+ export default connect(mapStateToProps, { fetchUsers: actions.fetchUsers } )(UserList);
+
+
+// { fetchUsers } === {fetchUsers : fetchUsers }
+
+ //action is an object
