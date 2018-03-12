@@ -21,7 +21,7 @@ const store = createStoreWithMiddleware(reducers);
 const token = localStorage.getItem('token');
 // If we have a token, consider the user to be signed in
 if(token) {
-    // we nned to update application state
+    // we need to update application state
     store.dispatch( { type:AUTH_USER} );
 }
 

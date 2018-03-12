@@ -79,7 +79,7 @@ class Signin extends Component {
 
 
 function mapStateToProps(state) {
-    console.log(state);
+    // console.log(state);
     return { errorMessage:  state.auth.error };
 }
 
